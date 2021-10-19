@@ -1,0 +1,604 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hero {
+  height: 80vh;
+}
+
+.hero .img {
+  height: 60%;
+  width: 100%;
+  background: url("../img/banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero .hero-inner {
+  background: black;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  color: white;
+  padding: 5%;
+}
+
+.hero .hero-inner span {
+  font-family: "Panton regular";
+  font-size: 1.8rem;
+}
+
+.hero .hero-inner h1 {
+  font-family: "Panton bold";
+  font-size: 2.3rem;
+  margin: 2rem 0;
+}
+
+.hero .hero-inner p {
+  font-family: "Panton semibold";
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+@media (min-width: 568px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .img {
+    height: 100%;
+  }
+  .hero .hero-inner {
+    height: 100%;
+    padding: 0;
+  }
+  .hero .hero-inner h1 {
+    padding-left: 5%;
+  }
+  .hero .hero-inner span {
+    padding-left: 5%;
+  }
+  .hero .hero-inner p {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 35.4rem;
+  }
+  .hero .img {
+    width: 50%;
+  }
+  .hero .hero-inner {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+  }
+  .hero .hero-inner h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 63rem;
+  }
+  .hero .hero-inner h1 {
+    font-size: 5rem;
+  }
+  .hero .hero-inner p {
+    font-size: 2rem;
+  }
+}
+
+#about {
+  padding: 5% 0;
+}
+
+@media (max-width: 767px) {
+  #about {
+    text-align: center;
+  }
+}
+
+#about .col-md-6 {
+  margin: auto 0;
+}
+
+#about .col-md-6 h5 {
+  font-size: 20px;
+  color: #0F5D08;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-family: "Panton bold";
+}
+
+@media (max-width: 1000px) {
+  #about .col-md-6 h5 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #about .col-md-6 h5 {
+    margin-top: 30px;
+  }
+}
+
+#about .col-md-6 h2 {
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: "Panton bold";
+}
+
+@media (max-width: 1000px) {
+  #about .col-md-6 h2 {
+    margin-bottom: 15px;
+    font-size: 33px;
+  }
+}
+
+#about .col-md-6 p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-family: "Panton semibold";
+}
+
+@media (max-width: 1000px) {
+  #about .col-md-6 p {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+}
+
+#about .col-md-6 a button {
+  width: 200px;
+  border: none;
+  background: #0F5D08;
+  color: white;
+  padding: 3% 0;
+  font-size: 18px;
+  border-radius: 3px;
+  font-family: "Panton semibold";
+}
+
+@media (max-width: 767px) {
+  #about .col-md-6 a button {
+    width: 150px;
+    padding: 0;
+    height: 50px;
+  }
+}
+
+#services {
+  padding: 5% 0;
+}
+
+@media (max-width: 767px) {
+  #services {
+    text-align: center;
+    padding: 5%;
+  }
+}
+
+#services .row:first-child {
+  margin-bottom: 30px;
+}
+
+#services .row:first-child h2 {
+  font-size: 45px;
+  font-family: "Panton bold";
+}
+
+@media (max-width: 1000px) {
+  #services .row:first-child h2 {
+    font-size: 35px;
+  }
+}
+
+#services .row:first-child p {
+  line-height: 25px;
+  font-size: 18px;
+  font-family: "Panton semibold";
+}
+
+@media (max-width: 1000px) {
+  #services .row:first-child p {
+    font-size: 15px;
+  }
+}
+
+#services .row:first-child .col-md-12 {
+  padding: 0;
+}
+
+#services .row:last-child .item {
+  -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, 0.111);
+          box-shadow: 0 2px 14px rgba(0, 0, 0, 0.111);
+  background: white;
+  color: black;
+  border-radius: 3px;
+  text-align: center;
+  padding: 15% 5% 5% 5%;
+}
+
+#services .row:last-child i {
+  color: #0F5D08;
+  position: relative;
+}
+
+#services .row:last-child i:before {
+  font-size: 70px;
+  margin-left: 0;
+}
+
+#services .row:last-child h3 {
+  font-size: 26px;
+  margin-top: 15px;
+  font-family: "Panton bold";
+}
+
+#services .row:last-child p {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Panton semibold";
+}
+
+.slider {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .slick-slide {
+    opacity: 0.2;
+  }
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+#products {
+  padding: 5% 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #products {
+    padding: 5%;
+  }
+}
+
+#products h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-family: "Panton bold";
+}
+
+@media (max-width: 767px) {
+  #products h2 {
+    font-size: 35px;
+  }
+}
+
+#products p {
+  font-size: 15px;
+  margin-bottom: 50px;
+  font-family: "Panton semibold";
+}
+
+#products .col-lg-4 {
+  padding: 5%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  #products .col-lg-4 {
+    min-height: 270px;
+  }
+}
+
+#products .col-lg-4 h3 {
+  margin-bottom: 30px;
+  font-family: "Panton extrabold";
+  font-size: 3.5rem;
+}
+
+#products .col-lg-4 p {
+  line-height: 25px;
+  opacity: 0.7;
+  font-family: "Panton semibold";
+}
+
+#products .col-lg-4:first-child {
+  background: #0F5D08;
+  color: white;
+}
+
+#products .col-lg-4:nth-child(2) {
+  background: url("../img/Screenshot (464).png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#products .col-lg-4:nth-child(3) {
+  background: #E5E5E5;
+  color: black;
+}
+
+#products .col-lg-4:nth-child(4) {
+  background: url("../img/Screenshot (467).png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#products .col-lg-4:nth-child(5) {
+  background: #2D2D2D;
+}
+
+#products .col-lg-4:nth-child(5) h3 {
+  color: #0F5D08;
+}
+
+#products .col-lg-4:nth-child(5) p {
+  color: white;
+}
+
+#products .col-lg-4:last-child {
+  background: url("../img/Screenshot (466).png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#contact {
+  padding: 5% 0;
+  background: black;
+  color: white;
+}
+
+#contact .bottom {
+  text-align: center;
+  padding: 5% 0;
+}
+
+#contact .bottom img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+#contact .bottom p {
+  padding: 0 25%;
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Panton semibold";
+}
+
+#contact .col-md-4 {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #contact .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+#contact .col-md-4 h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Panton bold";
+}
+
+#contact .col-md-4 hr {
+  border: none;
+  height: 2px;
+  width: 10%;
+  background: #0F5D08;
+}
+
+#contact .col-md-4 p {
+  text-transform: capitalize;
+  opacity: 0.7;
+  font-family: "Panton semibold";
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+footer {
+  background: black;
+  padding: 3% 0;
+  color: white;
+  font-family: "Panton semibold";
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer span {
+  color: #0F5D08;
+  cursor: pointer;
+}
+
+.hero-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 550px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.212)), to(rgba(0, 0, 0, 0.212))), url("../img/services.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)), url("../img/services.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.hero-services h1 {
+  font-size: 100px;
+  font-family: "Panton bold";
+}
+
+@media (max-width: 992px) {
+  .hero-services h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-services h1 {
+    font-size: 40px;
+  }
+}
+
+.hero-services hr {
+  background: rgba(255, 255, 255, 0.705);
+  width: 40%;
+  height: 2px;
+  border: none;
+}
+
+.vpn {
+  padding: 5%;
+}
+
+.vpn .vpn-inner h2 {
+  font-family: "Panton bold";
+  margin-bottom: 3rem;
+  font-size: 35px;
+}
+
+.vpn .vpn-inner p {
+  font-family: "Panton regular";
+  line-height: 1.3;
+  margin-bottom: 3rem;
+  font-size: 18px;
+}
+
+.vpn .vpn-inner hr {
+  background: #1A9328;
+  width: 20%;
+  height: 2px;
+  border: none;
+  position: relative;
+  right: 40%;
+}
+/*# sourceMappingURL=style.css.map */

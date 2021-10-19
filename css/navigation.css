@@ -1,0 +1,128 @@
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+header h3 {
+  display: block;
+  padding: 25px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Panton bold";
+  color: black;
+  font-weight: bold;
+}
+
+header .ham {
+  padding: 23px 40px 23px 9px;
+  position: absolute;
+  top: 3vh;
+  z-index: 99;
+  left: 3%;
+}
+
+header .ham i {
+  width: 19px;
+  background: black;
+  position: absolute;
+  height: 2px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+header .ham i:before {
+  width: 180%;
+  height: 2px;
+  content: "";
+  background: black;
+  position: absolute;
+  top: -13px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+header .ham i:after {
+  width: 180%;
+  height: 2px;
+  content: "";
+  background: black;
+  position: absolute;
+  top: 13px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+header .menu {
+  -webkit-box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.315);
+          box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.315);
+  background: white;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  width: 100%;
+  z-index: 90;
+  max-width: 0;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .menu li {
+  font-family: "Panton semibold";
+}
+
+header .menu li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 20px;
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header .change {
+  max-width: 100%;
+}
+
+header .open i {
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+  background: transparent;
+}
+
+header .open i:before {
+  -webkit-transform: rotate(495deg);
+          transform: rotate(495deg);
+  top: 0;
+}
+
+header .open i:after {
+  -webkit-transform: rotate(-495deg);
+          transform: rotate(-495deg);
+  top: 0;
+}
+/*# sourceMappingURL=navigation.css.map */

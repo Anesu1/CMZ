@@ -1,0 +1,27 @@
+$black:black;
+$semibold: "Panton semibold";
+$bold: "Panton bold";
+$regular:"Panton regular";
+
+header{position: relative;width:100%;height:auto;background:rgb(255, 255, 255);
+    h3{display:block; padding:25px 0;width:max-content;margin:auto;font-size:40px;text-transform:uppercase;font-family:$bold;color:rgb(0, 0, 0);font-weight:bold;}
+    .ham{padding:23px 40px 23px 9px;position: absolute;top:3vh;z-index:99;left:3%;
+        i{width:19px;background:$black;position: absolute;height:2px;transition:700ms;
+            &:before{width:180%;height:2px;content:"";background:$black;position:absolute;top:-13px;transition:700ms;}
+            &:after{width:180%;height:2px;content:"";background:$black;position:absolute;top:13px;transition:700ms;}
+
+        }
+    }
+    .menu{box-shadow:2px 0px 12px rgba(0, 0, 0, 0.315);background:white;transition:700ms;width:100%;z-index:90;max-width:0;height:100vh;left:0;top:0;position:absolute;overflow: hidden;display:flex;justify-content: center;align-items:center;flex-direction:column;
+        li{font-family: $semibold;
+            a{text-decoration: none;color: $black;text-transform:uppercase;width:max-content;padding:20px;display:block;font-weight:600;font-size:20px;}
+        }
+    }
+    .change{max-width:100%;}
+    .open{
+        i{transform:translateX(6px);background:transparent;
+            &:before{transform:rotate(495deg);top:0;}
+            &:after{transform:rotate(-495deg);top:0;}
+        }
+    }
+}
